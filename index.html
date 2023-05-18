@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
 
     <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+        <div class="container">
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#" class="home-button">Home</a>
+                <a href="#" class="about-button">About</a>
+                <a href="#" class="contact-button">Contact</a>
+                <a href="#" class="server-button">Server</a>
+                <button class="btnlogin-popup">
+                    Login
+                </button>
+            </nav>
+            <ion-icon id="menu-icone" name="menu"></ion-icon>
+        </div>
+        <menu id="menu" >
+            <a href="#" style="padding-top: 10px;" class="home-button">Home</a>
+            <a href="#" class="about-button">About</a>
+            <a href="#" class="contact-button">Contact</a>
+            <a href="#" class="server-button">Server</a>
             <button class="btnlogin-popup">
                 Login
             </button>
-        </nav>
+        </menu>
     </header>
 
     <div class="wrapper">
@@ -78,7 +89,73 @@
                 </div>
             </form>
         </div>
+
+        <!-- Minha parte -->
+        <div class="home">
+            <h1>Seja Bem-Vindo!</h1>
+            <br>
+            <p>Clique no botão "Login" para registrar-se ou fazer login para ter acesso a sua conta.</p>
+            <br>
+            <p>Fique por dentro de todas as nossas novidades através do nosso <a href="https://github.com/Vinicius2543/Tela_de_Login" target="_blank" class="links">repositório</a>.</p>
+        </div>
+
+        <div class="about">
+            <h1>sobre o site</h1>
+
+            <p>Este site foi desenvolvido por Vinicius Alexandre, utilizando parte de um codigo copiado do canal <a href="https://www.youtube.com/watch?v=p1GmFCGuVjw&ab_channel=Codehal" target="_blank" class="links">Codehal</a> para a criação deste sistema de login/registro.</p>
+            <br>
+            <p>Este sistema contém a parte de login e de conexão com o banco de dados que pode ser usada para criar a conexão com um banco de dados específico.</p>
+        </div>
+
+        <div class="contact">
+            <h1>Vinicius Alexandre de Oliveria Castro</h1>
+            <p id="years"></p>
+            <br>
+            <h2 style="color: #162938;">Sobre mim:</h2>
+            <p id="sobre_mim"></p>
+            <br>
+            <h2 style="color: #162938;">Redes:</h2>
+            <div id="redes">
+                <div class="bolinhas">
+                    <a href="https://api.whatsapp.com/send?phone=5518996753895" target="_blank"><img src="icones/whatsapp.ico" alt="WhatsApp"></a>
+                </div>
+                <div class="bolinhas">
+                    <a href="https://www.instagram.com/vinicius25431/" target="_blank"><img src="icones/instagram.png" alt="Instagram"></a>
+                </div>
+                <div class="bolinhas">
+                    <a href="https://github.com/Vinicius2543" target="_blank"><img src="icones/github.png" alt="GitHub"></a>
+                </div>
+                <div class="bolinhas">
+                    <a href="https://www.linkedin.com/in/vin%C3%ADcius-alexandre-22a9a125b/" target="_blank"><img src="icones/linkedin.png" alt="Linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box server">
+            <h2>Servidor</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="cloud-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Host</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Senha</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="folder-open"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Database</label>
+                </div>
+
+                <button type="submit" class="btn">Conectar</button>
+            </form>
+        </div>
     </div>
+
+    
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
